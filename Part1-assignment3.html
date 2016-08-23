@@ -1,0 +1,26 @@
+<html>
+<body>
+  <table align="Center" border="2">
+  <tr>
+  <td>
+    Enter X number:
+    <input type="text" id="txt1" name="text1"></td></tr>
+    <tr><td> Enter Y number:
+    <input type="text" id="txt2" name="text2"></td></tr>
+    <tr>
+  <td align="center"><button onclick="myFunction()">Submit</button></td>
+  </tr>
+  <tr><td  align="center"><h3><p id="demo">Answer: </p></h3></td></tr>
+  </table>
+    
+<script type="text/javascript">
+function myFunction(){
+
+	var x=document.getElementById("txt1").value;
+	var y=document.getElementById("txt2").value;;
+	var z=x % y;
+	document.getElementById("demo").innerHTML=z;
+}
+</script>
+</body>
+</html>
